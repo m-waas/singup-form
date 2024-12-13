@@ -45,7 +45,7 @@ body{
     border: 2px solid rgba(255, 255, 255, .2);
     border-radius: 40px;
     font-size: 16px;
-    color: white;
+    color: black;
     padding: 20px 45px 20px 20px;
 }
 
@@ -53,11 +53,22 @@ body{
     color: black;
 }
 
-.input-box img{
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-font-size: 20px;
+.input-box img.one {
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; /* Adjust size to fit neatly */
+    pointer-events: none; /* Prevent the icon from blocking input interaction */
+}
+
+.input-box img.two {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px; /* Adjust size to fit neatly */
+    pointer-events: none; /* Prevent the icon from blocking input interaction */
 }
 
 .wrapper .remember-forgot{
